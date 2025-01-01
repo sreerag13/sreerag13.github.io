@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Sreerag Chandran"
+title                    : "Sreerag's Homepage"
 title_separator          : "-"
 name                     : &name "Sreerag Chandran"
 description              : &description "Software Engineer"
