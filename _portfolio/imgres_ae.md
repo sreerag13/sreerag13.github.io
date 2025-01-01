@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+title: "Image Super Resolution Using Autoencoders in Keras"
+excerpt: "Implementation of Image Classification Model on COVID-19 Radiography dataset<br/><img src='/images/xray_covid.png'>"
 collection: portfolio
 ---
 

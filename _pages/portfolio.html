@@ -4,6 +4,7 @@ title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
+<input type="text" id="searchBar" onkeyup="filterPosts()" placeholder="Search ..">
 
 {% include base_path %}
 
@@ -12,3 +13,25 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
+
+<script>
+function filterPosts() {
+  var input, filter, posts, post, title, i, txtValue;
+  input = document.getElementById('searchBar');
+  filter = input.value.toUpperCase();
+  posts = document.getElementsByClassName('list__item');
+
+  for (i = 0; i < posts.length; i++) {
+    post = posts[i];
+    title = post.getElementsByClassName("archive__item-title")[0];
+    if (title) {
+      txtValue = title.textContent || title.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        post.style.display = "";
+      } else {
+        post.style.display = "none";
+      }
+    }       
+  }
+}
+</script>
