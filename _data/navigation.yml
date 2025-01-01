@@ -15,8 +15,8 @@ main:
   - title: "Posts"
     url: /blog/
 
-  - title: "Publications"
-    url: /publications/
+  # - title: "Publications"
+  #  url: /publications/
 
   
     
